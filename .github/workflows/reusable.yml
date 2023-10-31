@@ -1,10 +1,12 @@
 name: Reusable Workflow
+
 on: 
   workflow_call:
     inputs: 
       who-to-greet:
         type: string
-        default: 'World'
+        required: true
+        default: World
     outputs:
       current-time:
         description: 'The time when greeting.'
